@@ -202,7 +202,7 @@ module.exports = function (grunt) {
 						'<%= config.dist %>/scripts/{,*/}*.js',
 						'<%= config.dist %>/styles/{,*/}*.css',
 						'<%= config.dist %>/images/{,*/}*.*',
-						'<%= config.dist %>/styles/fonts/{,*/}*.*',
+						'<%= config.dist %>/fonts/{,*/}*.*',
 						'<%= config.dist %>/*.{ico,png}'
 					]
 				}
@@ -258,13 +258,17 @@ module.exports = function (grunt) {
 		jade: {
 			compile: {
 	            options: { pretty: true },
-	            files: [{
-	              cwd: "app/jade",
-	              src: "**/*.jade",
-	              dest: "app",
-	              expand: true,
-	              ext: ".html"
-	            }]
+	            files: {
+					'<%= config.app %>/index.html': '<%= config.app %>/jade/index.jade',
+					'<%= config.app %>/invalid.html': '<%= config.app %>/jade/invalid.jade'
+				}
+	            // files: [{
+	            //   cwd: "app/jade",
+	            //   src: "**/*.jade",
+	            //   dest: "app",
+	            //   expand: true,
+	            //   ext: ".html"
+	            // }]
 	        }
 		},
 
@@ -328,7 +332,7 @@ module.exports = function (grunt) {
 						'*.{ico,png,txt}',
 						'images/{,*/}*.webp',
 						'{,*/}*.html',
-						'styles/fonts/{,*/}*.*'
+						'fonts/{,*/}*.*'
 					]
 				}, {
 					src: 'node_modules/apache-server-configs/dist/.htaccess',

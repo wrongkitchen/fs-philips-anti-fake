@@ -13,13 +13,54 @@
     <!-- endbuild-->
   </head>
   <body>
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Sass</li>
-      </ul>
+    <div class="wrapper">
+      <div class="heroImage">
+      </div>
+      <div class="mainContent">
+        <div class="formWrap">
+          <div class="contentLeft">
+            <p>It is always our highest priority at Philips to provide maximum satisfaction for customers who make the choice to buy genuine Philips products. </p>
+            <p>To guarantee the authenticity of Philips products, it is our policy to sell products in genuine printed boxes that bear our Philips Corporate identity. Furthermore we have decided to equip our genuine packaging with authenticity label.</p>
+            <p>By entering the provided label ID, our partners and consumers can check the product authenticity at any time on the Philips product authenticity platform. Using non genuine Lamps is dangerous.</p>
+            <p>Therefore, please make sure that you only use genuine Philips products that carry the authenticity label. </p>
+            <p>To ensure the authenticity of your Philips lamp, please enter the ID as indicated on the packaging sticker.</p>
+          </div>
+          <div class="contentRight">
+            <div class="upper"><img src="images/1879_00_105_Counterfeit_Web_1_03.jpg"></div>
+            <div class="lower">
+              <div class="pull-left form">
+                <div class="sixteenDigis formRow">
+                  <div class="label">Please enter the 16 digits from the label</div>
+                  <div class="textInput">
+                    <input type="text">
+                    <div class="errorMsg"></div>
+                  </div>
+                </div>
+                <div class="labelID formRow">
+                  <div class="label">Please enter the label ID</div>
+                  <div class="textInput">
+                    <input type="text">
+                    <div class="errorMsg"></div>
+                  </div>
+                </div>
+                <div class="sixChar formRow hasError">
+                  <div class="label">Please enter the 6 characters from the image</div>
+                  <div class="textInput">
+                    <input type="text">
+                    <div class="errorMsg">Re-enter the 6 characters from the image</div>
+                  </div>
+                </div>
+                <div class="submitBtn"></div>
+              </div>
+              <div class="pull-left qrcode"><img src="images/1879_00_105_Counterfeit_Web_1_06.jpg"></div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="footer">
+      </div>
     </div>
     <!-- build:js(.) scripts/vendor.js-->
     <script src="bower_components/jquery/dist/jquery.js"></script>

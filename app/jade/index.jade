@@ -1,32 +1,38 @@
-<!doctype html>
-doctype html
-html.no-js
-	head
-		meta(charset="utf-8")
-		title test webapp generator
-		meta(name="description" content="")
-		meta(name="viewport" content="width=device-width")
-		link(rel="shortcut icon" href="/favicon.ico")
-		// build:css(.) styles/vendor.css
-		// endbuild
-		// build:css(.tmp) styles/main.css
-		link(rel="stylesheet" href="styles/main.css")
-		// endbuild
-	body
-		div.hero-unit
-			h1 'Allo, 'Allo!
-			p You now have
-			ul
-				li HTML5 Boilerplate
-				li Sass
+extends ./layout/base.jade
 
-		// build:js(.) scripts/vendor.js
-		script(src="bower_components/jquery/dist/jquery.js")
-		// endbuild
+block content
+	div.formWrap
+		div.contentLeft
+			p It is always our highest priority at Philips to provide maximum satisfaction for customers who make the choice to buy genuine Philips products. 
+			p To guarantee the authenticity of Philips products, it is our policy to sell products in genuine printed boxes that bear our Philips Corporate identity. Furthermore we have decided to equip our genuine packaging with authenticity label.
+			p By entering the provided label ID, our partners and consumers can check the product authenticity at any time on the Philips product authenticity platform. Using non genuine Lamps is dangerous.
+			p Therefore, please make sure that you only use genuine Philips products that carry the authenticity label. 
+			p To ensure the authenticity of your Philips lamp, please enter the ID as indicated on the packaging sticker.
+		div.contentRight
+			div.upper
+				img(src="images/1879_00_105_Counterfeit_Web_1_03.jpg")
+			div.lower
+				div.pull-left.form
+					div.sixteenDigis.formRow
+						div.label Please enter the 16 digits from the label
+						div.textInput
+							input(type="text")
+							div.errorMsg
+					div.labelID.formRow
+						div.label Please enter the label ID
+						div.textInput
+							input(type="text")
+							div.errorMsg
+					div.sixChar.formRow.hasError
+						div.label Please enter the 6 characters from the image
+						div.textInput
+							input(type="text")
+							div.errorMsg Re-enter the 6 characters from the image
 
-		script.
-			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create','UA-XXXXX-X');ga('send','pageview');
-
-		// build:js({app,.tmp}) scripts/main.js
-		script(src="scripts/main.js")
-		// endbuild
+					div.submitBtn
+				div.pull-left.qrcode
+					img(src="images/1879_00_105_Counterfeit_Web_1_06.jpg")
+				div.clearfix
+			
+		
+		div.clearfix
