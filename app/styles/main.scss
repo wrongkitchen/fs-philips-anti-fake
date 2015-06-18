@@ -35,11 +35,18 @@
 }
 
 html, body{ font-family: centrale_sans; }
-
 .clearfix{ clear:both; }
 .pull-left{ float:left; } 
 .pull-right{ float:right; } 
 .mainContent{ width:960px; margin:0 auto; }
+
+.labelIDReport{
+	h2{ color:#83004b; font-family: centrale_sans_xbold; }
+	h3{ color:#1d4076; font-family: centrale_sans_xbold; }
+	.upper{ margin-bottom:50px }
+	.discover{ margin-top:70px; }
+	.backBtn{ width:35px; height:35px; margin-top:40px; background-image: url(../images/btn-back.jpg); }
+}
 
 .formWrap{
 	font-size:14px; color:#3c3c3c;

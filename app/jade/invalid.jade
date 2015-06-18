@@ -1,13 +1,17 @@
 extends ./layout/base.jade
 
 block content
-	h2 Label ID is invalid
-	p Lorem ipsum In quis ex, 
-		b ullamco ex officia elit proident irure non tempor ea.
-	p Lorem ipsum Nulla nisi irure sint sint tempor esse non in esse Excepteur exercitation proident pariatur quis commodo dolor.
+	div.labelIDReport
+		div.upper
+			h2 Label ID is invalid
+			p Label ID is invalid, 
+				strong there is a high likelihood that your product is fake. Please contact your local shop or garage to get a genuine product.
+			p Please key in CODE again to ensure correct entry. Further rejection of correct code entry may indicate this product is counterfeit.
 
-
-	h3 E-Mail contact
-	p Lorem ipsum Dolor est fugiat ea ex occaecat elit do sint nostrud magna in Duis irure amet dolore commodo eu 
-		a(href='#') autolighting.asia@philips.com
-		| .
+		div.lower
+			h3 E-Mail contact
+			p If you may have some doubts whether your Philips product is authentic, please send us an email at 
+				a(href="mailto:autolighting.asia@philips.com") autolighting.asia@philips.com
+			p.discover Discover more about Philips Automotive Lighting products: 
+				a(href="http://www.philips.com/automotive") www.philips.com/automotive
+		div.backBtn
