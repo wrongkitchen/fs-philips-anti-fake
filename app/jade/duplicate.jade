@@ -1,12 +1,14 @@
 extends ./layout/base.jade
 
 block content
-	div.labelIDReport.invalid
+	div.labelIDReport.valid
 		div.upper
-			h2 Label ID is invalid
-			p Label ID is invalid, 
-				strong there is a high likelihood that your product is fake. Please contact your local shop or garage to get a genuine product.
-			p Please key in CODE again to ensure correct entry. Further rejection of correct code entry may indicate this product is counterfeit.
+			h2 Label ID is valid
+			p Label ID is valid, 
+				strong this means that your product is genuine
+			p Label ID is valid, this means that your product is genuine. 
+				strong But 
+				| if the same code has been checked 5 times or more, it's highly probable that a duplicated code is being used. Please contact your local shop to reconfirm that the product is genuine.
 
 		div.lower
 			h3 E-Mail contact
@@ -14,8 +16,9 @@ block content
 				br 
 				| please send us an email at 
 				a(href="mailto:autolighting.asia@philips.com") autolighting.asia@philips.com
-
+			
 			p.discover Discover more about Philips Automotive Lighting products: 
 				br
 				a(href="http://www.philips.com/automotive") www.philips.com/automotive
+		
 		div.backBtn

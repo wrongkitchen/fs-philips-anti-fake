@@ -260,7 +260,9 @@ module.exports = function (grunt) {
 	            options: { pretty: true },
 	            files: {
 					'<%= config.app %>/index.html': '<%= config.app %>/jade/index.jade',
-					'<%= config.app %>/invalid.html': '<%= config.app %>/jade/invalid.jade'
+					'<%= config.app %>/invalid.html': '<%= config.app %>/jade/invalid.jade',
+					'<%= config.app %>/valid.html': '<%= config.app %>/jade/valid.jade',
+					'<%= config.app %>/duplicate.html': '<%= config.app %>/jade/duplicate.jade'
 				}
 	            // files: [{
 	            //   cwd: "app/jade",
@@ -276,7 +278,7 @@ module.exports = function (grunt) {
 			dist: {
 				options: {
 					collapseBooleanAttributes: true,
-					collapseWhitespace: true,
+					collapseWhitespace: false,
 					conservativeCollapse: true,
 					removeAttributeQuotes: true,
 					removeCommentsFromCDATA: true,
