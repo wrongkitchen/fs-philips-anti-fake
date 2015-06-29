@@ -84,6 +84,7 @@ a{ color:#006fb6; }
 		display:none;
 	}
 }
+#phi-header-content .title h1{ line-height: normal; }
 #box-philips-logo{ 
 	width:167px; height:200px; background:url(../images/philips-shape-140.png) no-repeat scroll top left; top:11px; 
 	@include respond-to(mix)
