@@ -143,13 +143,14 @@ a{ color:#006fb6; }
 }
 @include respond-to(mix)
 {
+	.mobileHide{ display: none; }
 	.mobileNavBtn{ display:block; }
 	.banner-driver #phi-header-content{
 		min-height:370px;
 		.title{   
 			left: 10%;
 			top: 170px; 
-			h1{ font-size:36px; }
+			h1{ font-size:2.4em; }
 			p{ font-size:18px; }
 			h1, p{ padding-right: 10px; line-height: normal; }
 		}
@@ -192,8 +193,8 @@ a{ color:#006fb6; }
 	&.valid{
 		h2{ color:#1d4076; font-family: centrale_sans_xbold; }
 	}
-	h2{ font-size: 1.5em; margin-bottom:20px; }
-	h3{ color:#1d4076; font-family: centrale_sans_xbold; font-size: 1.17em; margin-bottom:20px; }
+	h2{ font-size: 2em; margin-bottom:20px; }
+	h3{ color:#1d4076; font-family: centrale_sans_xbold; font-size: 1.5em; margin-bottom:20px; }
 	.upper{ margin-bottom:50px }
 	.upper, .lower{ 
 		width:570px; 
@@ -240,8 +241,10 @@ a{ color:#006fb6; }
 				input{ 
 					width:195px; height:34px; border-radius: 3px; border:1px solid #ccc; 
 				}
-				.label{ margin-bottom:11px; width:220px; padding-top:16px; }
-				.errorMsg{ color:#F00; margin-top:25px; display:none; }
+				.label{ margin-bottom:11px; width:220px; padding-top:16px; background-color: #FFF; }
+				.errorMsg{ 
+					color:#F00; margin-top:25px; display:none; width:200px; 
+				}
 				&.sixteenDigis{ 
 					padding-bottom:23px; background-position: top right;
 					background-image: url(../images/1879_00_105_Counterfeit_Web_1_06.jpg);
@@ -260,8 +263,9 @@ a{ color:#006fb6; }
 			@include respond-to(mobile)
 			{
 				.formRow{ 
-					background-size: 50%; 
-					&.sixteenDigis, &.sixChar{ background-position: right 13px; }
+					&.sixteenDigis, &.sixChar{ background-position: -110px top; }
+					&.sixteenDigis{ padding-top: 100px; margin-bottom: 40px; }
+					&.sixChar{ padding-top: 50px; }
 					.label{ width:180px; }
 				}
 			}
