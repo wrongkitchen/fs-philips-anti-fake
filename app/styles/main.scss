@@ -37,6 +37,18 @@ $mobileMaxWidth: 640px;
 }
 
 @font-face {
+  font-family: 'centrale_sans_bold';
+  src: url('../fonts/CentraleSans-Bold/CentraleSans-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/CentraleSans-Bold/CentraleSans-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/CentraleSans-Bold/CentraleSans-Bold.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/CentraleSans-Bold/CentraleSans-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/CentraleSans-Bold/CentraleSans-Bold.svg#7aed1b68c527ea246edf61790a121845') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  700;
+}
+
+@font-face {
 	font-family: 'centrale_sans_xlight';
 	src: url('../fonts/en-US/CentraleSans-XLight.eot'); /* IE9 Compat Modes */
 	src: url('../fonts/en-US/CentraleSans-XLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -50,11 +62,11 @@ $mobileMaxWidth: 640px;
 
 @font-face {
 	font-family: 'centrale_sans_xbold';
-	src: url('../fonts/en-US/CentraleSans-XBold.eot'); /* IE9 Compat Modes */
-	src: url('../fonts/en-US/CentraleSans-XBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-	url('../fonts/en-US/CentraleSans-XBold.woff') format('woff'), /* Modern Browsers */
-	url('../fonts/en-US/CentraleSans-XBold.ttf')  format('truetype'), /* Safari, Android, iOS */
-	url('../fonts/en-US/CentraleSans-XBold.svg#9a864760680d346e5852a22d8d46f391') format('svg'); /* Legacy iOS */
+	src: url('../fonts/CentraleSans-XBold/CentraleSans-XBold.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/CentraleSans-XBold/CentraleSans-XBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../fonts/CentraleSans-XBold/CentraleSans-XBold.woff') format('woff'), /* Modern Browsers */
+	url('../fonts/CentraleSans-XBold/CentraleSans-XBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+	url('../fonts/CentraleSans-XBold/CentraleSans-XBold.svg#9a864760680d346e5852a22d8d46f391') format('svg'); /* Legacy iOS */
 
 	font-style:   normal;
 	font-weight:  700;
@@ -89,6 +101,7 @@ a{ color:#006fb6; }
 	width:167px; height:200px; background:url(../images/philips-shape-140.png) no-repeat scroll top left; top:11px; 
 	@include respond-to(mix)
 	{
+		background:url(../images/philips-shape-mobile.png) no-repeat scroll top left;
 		background-size:contain; width:105px;
 	}
 }
