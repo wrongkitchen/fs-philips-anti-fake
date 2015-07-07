@@ -3,22 +3,23 @@ extends ./layout/base.jade
 block content
 	div.labelIDReport.invalid
 		div.upper
-			h2 Label ID is invalid
-			p Label ID is invalid, 
-				b there is a highly probable that your product is fake. 
+			h2 <%= invalid.h2Title %>
+			p <%= invalid.labelIsInvalid %>
+				b <%= invalid.labelIsInvalidBold %>
 				br.mobileHide
-				b Please contact your local shop to get a genuine product.
+				b <%= invalid.pleaseContact %>
 			br
-			p Please key in CODE again to ensure correct entry. Further rejection of correct code entry may indicate that the product is counterfeit.
+			p <%= invalid.pleaseKeyIn %>
 
 		div.lower
-			h3 E-Mail contact
-			p If you have any doubts whether your Philips product is authentic, 
+			h3 <%= invalid.emailTitle %>
+			p <%= invalid.authentic %>
 				br.mobileHide
-				| please email to 
-				a(href="mailto:autolighting.asia@philips.com") autolighting.asia@philips.com
+				| <%= invalid.pleaseEmail %>
+				a(href="mailto:autolighting.asia@philips.com") <%= invalid.emailAddress %>
 
 			//- p.discover Discover more about Philips Automotive Lighting products: 
 			//- 	br
 			//- 	a(href="http://www.philips.com/automotive") www.philips.com/automotive
-		div.backBtn
+		a(href="index.html")
+			div.backBtn

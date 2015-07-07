@@ -4,30 +4,30 @@ block content
 	div.formWrap
 		div.contentLeft
 			div.upper
-				p At Philips we care about your safety and satisfaction. Therefore we want to help you to ensure you buy a genuine Philips product.
-				p To guarantee the authenticity of our products, they are put into genuine Philips packaging equipped with an authenticity label.
-				p By entering the provided label ID, you can check the product authenticity at any time.
+				p <%= index.p1 %>
+				p <%= index.p2 %>
+				p <%= index.p3 %>
 				//- p Therefore, please make sure that you only use genuine Philips products that carry the authenticity label. 
 				br
 				br
 				p 
-					b www.philips.com/authenticity/auto
+					b <%= index.p_url %>
 			div.lower
 				div.form
 					div.sixteenDigis.formRow
-						div.label Please enter the 16 digits on the label after scratching
+						div.label <%= index.formEnterDigi %>
 						div.textInput
 							input(type="text")
 							div.errorMsg
 					div.sixChar.formRow.hasError
-						div.label Please enter the 6 characters from the image
+						div.label <%= index.formEnterFromImage %>
 						div.textInput
 							input(type="text")
-							div.errorMsg Re-enter the 6 characters from the image
+							div.errorMsg <%= index.formErrorMsg %>
 
 					div.submitBtn
 		div.contentRight
-			img(src="images/1879_00_105_Counterfeit_Web_1_03.jpg")
+			img(src="../images/1879_00_105_Counterfeit_Web_1_03.jpg")
 			
 		
 		div.clearfix

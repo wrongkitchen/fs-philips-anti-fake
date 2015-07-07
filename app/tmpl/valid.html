@@ -1,15 +1,15 @@
-<!doctype html><!DOCTYPE html>
+<!DOCTYPE html>
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>Welcome to Philips automotive product authenticity</title>
+    <title><%= general.pageTitle %></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="/favicon.ico">
-    <!-- build:css(.) styles/vendor.css-->
+    <!-- build:css(.) ../styles/vender.css-->
     <link rel="stylesheet" href="bower_components/jquery-selectboxit/src/stylesheets/jquery.selectBoxIt.css">
     <!-- endbuild-->
-    <!-- build:css(.tmp) styles/main.css-->
+    <!-- build:css(.tmp) ../styles/main.css-->
     <link rel="stylesheet" href="styles/phi-xenon-warranty.css">
     <link rel="stylesheet" href="styles/led_vision.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -28,7 +28,7 @@
             <li> <a href="#">Promotions</a></li>
             <li> <a href="#">Register product</a></li>
           </ul>
-          <div class="bottomLogo"><img src="images/philips-footer-logo.png"></div>
+          <div class="bottomLogo"><img src="../images/philips-footer-logo.png"></div>
         </div>
         <div class="clearfix"></div>
       </div>
@@ -228,17 +228,17 @@
         <div class="heroImage">
         </div>
         <div class="mainContent">
-          <div class="labelIDReport invalid">
+          <div class="labelIDReport valid">
             <div class="upper">
-              <h2>Label ID is invalid</h2>
-              <p>Label ID is invalid, <b>there is a highly probable that your product is fake. </b><br class="mobileHide"><b>Please contact your local shop to get a genuine product.</b></p><br>
-              <p>Please key in CODE again to ensure correct entry. Further rejection of correct code entry may indicate that the product is counterfeit.</p>
+              <h2><%= valid.h2Title %></h2>
+              <p><%= valid.labelIsValid %><b><%= valid.labelIsValidBold %></b></p>
             </div>
             <div class="lower">
-              <h3>E-Mail contact</h3>
-              <p>If you have any doubts whether your Philips product is authentic, <br class="mobileHide">please email to <a href="mailto:autolighting.asia@philips.com">autolighting.asia@philips.com</a></p>
-            </div>
-            <div class="backBtn"></div>
+              <h3><%= valid.emailTitle %></h3>
+              <p><%= valid.authentic %><br class="mobileHide"><%= valid.pleaseEmail %><a href="mailto:autolighting.asia@philips.com"><%= valid.emailAddress %></a></p>
+              <p class="discover"><%= valid.discoverMore %><br><a href="http://www.philips.com/automotive"><%= valid.discoverURL %></a></p>
+            </div><a href="index.html">
+              <div class="backBtn"></div></a>
           </div>
         </div>
       </div>
@@ -306,7 +306,7 @@
               																	
               																	<div class="parsys par_gc04_2"><div class="gc23-smallimage section">
               																		
-              																		<img src="images/philips-footer-logo.png" title="" alt="">
+              																		<img src="../images/philips-footer-logo.png" title="" alt="">
               																		
               																	</div>
               																</div>
@@ -409,7 +409,7 @@
         </section>
       </div>
     </div>
-    <!-- build:js(.) scripts/vendor.js-->
+    <!-- build:js(.) ../scripts/vendor.js-->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/jquery-selectboxit/libs/jqueryUI/jquery-ui.js"></script>
     <script src="bower_components/jquery-selectboxit/src/javascripts/jquery.selectBoxIt.min.js"></script>
@@ -418,7 +418,7 @@
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create','UA-XXXXX-X');ga('send','pageview');
       
     </script>
-    <!-- build:js({app,.tmp}) scripts/main.js-->
+    <!-- build:js({app,.tmp}) ../scripts/main.js-->
     <script src="scripts/main.js"></script>
     <!-- endbuild-->
   </body>

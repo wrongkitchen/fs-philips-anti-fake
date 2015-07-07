@@ -1,0 +1,48 @@
+{
+    "general":{
+        "pageTitle" : "Welcome to Philips automotive product authenticity"
+    },
+    "index" : {
+        "p1": "At Philips we care about your safety and satisfaction. Therefore we want to help you to ensure you buy a genuine Philips product.",
+        "p2": "To guarantee the authenticity of our products, they are put into genuine Philips packaging equipped with an authenticity label.",
+        "p3": "By entering the provided label ID, you can check the product authenticity at any time.",
+        "p_url" : "www.philips.com/authenticity/auto",
+        "formEnterDigi" : "Please enter the 16 digits on the label after scratching",
+        "formEnterFromImage" : "Please enter the 6 characters from the image",
+        "formErrorMsg" : "Re-enter the 6 characters from the image"
+    },
+    "duplicate": {
+        "h2Title" : "Label ID is valid",
+        "labelIsValid" : "Label ID is valid, ",
+        "labelIsValidBold" : "this means that your product is genuine.",
+        "labelIsValidDetail" : "Label ID is valid, this means that your product is genuine. But if the same code has been checked 5 times or more, It’s highly probable that a duplicated code is being used. Please contact your local shop to reconfirm that the product is genuine.",
+        "emailTitle": "E-Mail contact",
+        "authentic" : "If you have any doubts whether your Philips product is authentic, ",
+        "pleaseEmail" : "please email to ",
+        "emailAddress" : "autolighting.asia@philips.com",
+        "discoverMore" : "Discover more about Philips Automotive Lighting products: ",
+        "discoverURL" : "www.philips.com/automotive"
+    },
+    "valid": {
+        "h2Title" : "Label ID is valid",
+        "labelIsValid" : "Label ID is valid, ",
+        "labelIsValidBold" : "this means that your product is genuine.",
+        "emailTitle": "E-Mail contact",
+        "authentic" : "If you have any doubts whether your Philips product is authentic, ",
+        "pleaseEmail" : "please email to ",
+        "emailAddress" : "autolighting.asia@philips.com",
+        "discoverMore" : "Discover more about Philips Automotive Lighting products: ",
+        "discoverURL" : "www.philips.com/automotive"
+    },
+    "invalid": {
+        "h2Title" : "Label ID is invalid",
+        "labelIsInvalid" : "Label ID is invalid, ",
+        "labelIsInvalidBold" : "there is a highly probable that your product is fake.",
+        "pleaseContact" : "Please contact your local shop to get a genuine product.",
+        "pleaseKeyIn" : "Please key in CODE again to ensure correct entry. Further rejection of correct code entry may indicate that the product is counterfeit.",
+        "emailTitle": "E-Mail contact",
+        "authentic" : "If you have any doubts whether your Philips product is authentic, ",
+        "pleaseEmail" : "please email to ",
+        "emailAddress" : "autolighting.asia@philips.com"
+    }
+}

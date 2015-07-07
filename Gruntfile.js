@@ -83,9 +83,10 @@ module.exports = function (grunt) {
 			livereload: {
 				options: {
 					middleware: function(connect) {
+						console.log(connect);
 						return [
 							connect.static('.tmp'),
-							connect().use('/bower_components', connect.static('./bower_components')),
+							connect().use('bower_components', connect.static('./bower_components')),
 							connect.static(config.app)
 						];
 					}
@@ -99,7 +100,7 @@ module.exports = function (grunt) {
 						return [
 							connect.static('.tmp'),
 							connect.static('test'),
-							connect().use('/bower_components', connect.static('./bower_components')),
+							connect().use('bower_components', connect.static('./bower_components')),
 							connect.static(config.app)
 						];
 					}
@@ -214,9 +215,9 @@ module.exports = function (grunt) {
 		// additional tasks can operate on them
 		useminPrepare: {
 			options: {
-				dest: '<%= config.dist %>'
+				dest: '<%= config.dist %>/tmpl'
 			},
-			html: '<%= config.app %>/index.html'
+			html: '<%= config.app %>/tmpl/{,*/}*.html'
 		},
 
 		// Performs rewrites based on rev and the useminPrepare configuration
@@ -257,21 +258,21 @@ module.exports = function (grunt) {
 
 		jade: {
 			compile: {
-	            options: { pretty: true },
-	            files: {
-					'<%= config.app %>/index.html': '<%= config.app %>/jade/index.jade',
-					'<%= config.app %>/invalid.html': '<%= config.app %>/jade/invalid.jade',
-					'<%= config.app %>/valid.html': '<%= config.app %>/jade/valid.jade',
-					'<%= config.app %>/duplicate.html': '<%= config.app %>/jade/duplicate.jade'
+				options: { pretty: true },
+				files: {
+					'<%= config.app %>/tmpl/index.html': '<%= config.app %>/jade/index.jade',
+					'<%= config.app %>/tmpl/invalid.html': '<%= config.app %>/jade/invalid.jade',
+					'<%= config.app %>/tmpl/valid.html': '<%= config.app %>/jade/valid.jade',
+					'<%= config.app %>/tmpl/duplicate.html': '<%= config.app %>/jade/duplicate.jade'
 				}
-	            // files: [{
-	            //   cwd: "app/jade",
-	            //   src: "**/*.jade",
-	            //   dest: "app",
-	            //   expand: true,
-	            //   ext: ".html"
-	            // }]
-	        }
+				// files: [{
+				//   cwd: "app/jade",
+				//   src: "**/*.jade",
+				//   dest: "app",
+				//   expand: true,
+				//   ext: ".html"
+				// }]
+			}
 		},
 
 		htmlmin: {
@@ -280,7 +281,7 @@ module.exports = function (grunt) {
 					collapseBooleanAttributes: true,
 					collapseWhitespace: false,
 					conservativeCollapse: true,
-					removeAttributeQuotes: true,
+					removeAttributeQuotes: false,
 					removeCommentsFromCDATA: true,
 					removeEmptyAttributes: true,
 					removeOptionalTags: true,
@@ -289,9 +290,9 @@ module.exports = function (grunt) {
 				},
 				files: [{
 					expand: true,
-					cwd: '<%= config.dist %>',
+					cwd: '<%= config.dist %>/tmpl',
 					src: '{,*/}*.html',
-					dest: '<%= config.dist %>'
+					dest: '<%= config.dist %>/tmpl'
 				}]
 			}
 		},
@@ -347,6 +348,22 @@ module.exports = function (grunt) {
 				cwd: '<%= config.app %>/styles',
 				dest: '.tmp/styles/',
 				src: '{,*/}*.css'
+			}
+		},
+
+		multi_lang_site_generator: {
+			default: {
+				options: {
+					vocabs: ['en'],
+					vocab_directory: '<%= config.app %>/locales/',
+					output_directory: '<%= config.dist %>/'
+				},
+				files: {
+					'duplicate.html': '<%= config.dist %>/tmpl/duplicate.html',
+					'index.html': '<%= config.dist %>/tmpl/index.html',
+					'invalid.html': '<%= config.dist %>/tmpl/invalid.html',
+					'valid.html' : '<%= config.dist %>/tmpl/valid.html'
+				}
 			}
 		},
 
@@ -421,6 +438,27 @@ module.exports = function (grunt) {
 		'usemin',
 		'htmlmin'
 	]);
+
+	grunt.registerTask('build_translate', [
+		'clean:dist',
+		'jade',
+		'useminPrepare',
+		'concurrent:dist',
+		'autoprefixer',
+		'concat',
+		'cssmin',
+		'uglify',
+		'copy:dist',
+		'rev',
+		'usemin',
+		'htmlmin',
+		'multi_lang_site_generator'
+	]);
+
+	grunt.registerTask('translate', [
+		'multi_lang_site_generator'
+	]);
+
 
 	grunt.registerTask('default', [
 		'newer:jshint',

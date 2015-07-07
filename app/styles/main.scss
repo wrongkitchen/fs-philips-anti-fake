@@ -169,7 +169,7 @@ a{ color:#006fb6; }
 		}
 	}
 	.p-footer{ 
-		height:290px; 
+		height:330px; 
 		.p-grid {
 			display: block;
 		}
@@ -178,6 +178,7 @@ a{ color:#006fb6; }
 			padding: 0 !important;
 			display: block;
 			text-align: center;
+			.n06-selectsite output{ display: block; }
 			&:first-child {
 				position: absolute;
 				width: 100%;

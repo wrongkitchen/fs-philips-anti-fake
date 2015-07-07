@@ -1,18 +1,17 @@
-<!doctype html>
 doctype html
 block vars
 
 html.no-js
 	head
 		meta(charset="utf-8")
-		title Welcome to Philips automotive product authenticity
+		title <%= general.pageTitle %>
 		meta(name="description" content="")
 		meta(name="viewport" content="width=device-width")
 		link(rel="shortcut icon" href="/favicon.ico")
-		// build:css(.) styles/vendor.css
+		// build:css(.) ../styles/vender.css
 		link(rel="stylesheet" href="bower_components/jquery-selectboxit/src/stylesheets/jquery.selectBoxIt.css")
 		// endbuild
-		// build:css(.tmp) styles/main.css
+		// build:css(.tmp) ../styles/main.css
 		link(rel="stylesheet" href="styles/phi-xenon-warranty.css")
 		link(rel="stylesheet" href="styles/led_vision.css")
 		link(rel="stylesheet" href="styles/main.css")
@@ -34,7 +33,7 @@ html.no-js
 			div.footerWrapper
 				include ../components/footer.jade
 
-		// build:js(.) scripts/vendor.js
+		// build:js(.) ../scripts/vendor.js
 		script(src="bower_components/jquery/dist/jquery.js")
 		script(src="bower_components/jquery-selectboxit/libs/jqueryUI/jquery-ui.js")
 		script(src="bower_components/jquery-selectboxit/src/javascripts/jquery.selectBoxIt.min.js")
@@ -43,6 +42,6 @@ html.no-js
 		script.
 			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create','UA-XXXXX-X');ga('send','pageview');
 
-		// build:js({app,.tmp}) scripts/main.js
+		// build:js({app,.tmp}) ../scripts/main.js
 		script(src="scripts/main.js")
 		// endbuild
