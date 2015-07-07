@@ -354,7 +354,7 @@ module.exports = function (grunt) {
 		multi_lang_site_generator: {
 			default: {
 				options: {
-					vocabs: ['en'],
+					vocabs: ['en_hk', 'zh_hk', 'cn', 'jp', 'kr', 'th', 'vn'],
 					vocab_directory: '<%= config.app %>/locales/',
 					output_directory: '<%= config.dist %>/'
 				},

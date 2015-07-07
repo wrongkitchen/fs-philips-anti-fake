@@ -72,10 +72,22 @@ $mobileMaxWidth: 640px;
 	font-weight:  700;
 }
 
-html, body{ font-family: centrale_sans; padding:0; margin:0; min-width:0; }
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: centrale_sans;
+  font-size: 12px;
+  color: #7a7a7a;
+  line-height: normal;
+}
 body{
 	&.mobileNavExpend{
 		.mobileNav{ right:0; opacity: 1; }
+	}
+	&.jp{
+		.p-n01-header .p-bar-nav.p-position{ top:-2px; }
+		.p-n01-header .p-bar-nav.p-position>li{ padding-bottom:14px; }
+		.p-n01-header .p-bar-nav>li{ font-size:13px; }
 	}
 }
 a{ color:#006fb6; }
@@ -96,7 +108,12 @@ a{ color:#006fb6; }
 		display:none;
 	}
 }
-#phi-header-content .title h1{ line-height: normal; }
+#phi-header-content{
+	min-height:580px; max-width: 960px;
+	position: relative;
+	margin: 0 auto;
+	.title h1{ line-height: normal; }
+}
 #box-philips-logo{ 
 	width:167px; height:200px; background:url(../images/philips-shape-140.png) no-repeat scroll top left; top:11px; 
 	@include respond-to(mix)
@@ -105,6 +122,7 @@ a{ color:#006fb6; }
 		background-size:contain; width:105px;
 	}
 }
+.p-n01-header .p-small-nav{ display:none !important; }
 .p-human{
 	position: absolute; z-index: 1; top: 50%; margin-top: -20px; right: 67px; height: 31px;
 	background-image: url(../images/ico-human.png); width:31px; background-position: center center; background-repeat: no-repeat;
@@ -148,7 +166,8 @@ a{ color:#006fb6; }
 	background-image: url(../images/key_visual.jpg); 
 	background-repeat: no-repeat; background-position:center center;
 	background-size: cover;
-	margin-bottom:50px;
+	position: relative;
+	z-index: 10; top: -54px;
 }
 .mobileNavBtn{ 
 	background-image: url(../images/ico-nav.png); background-position: center center; background-repeat: no-repeat;
@@ -156,6 +175,7 @@ a{ color:#006fb6; }
 }
 @include respond-to(mix)
 {
+	.p-bar-wrapper{ display:none !important; }
 	.mobileHide{ display: none; }
 	.mobileNavBtn{ display:block; }
 	.banner-driver #phi-header-content{
@@ -248,8 +268,8 @@ a{ color:#006fb6; }
 		.form{ 
 			padding-top: 28px;
 			.submitBtn{ 
-				width:87px; height:35px; margin-top:74px; cursor:pointer;
-				background-image: url(../images/btn-check.jpg);
+				width:87px; height:35px; margin-top:74px;
+				color: #FFF; border-radius: 4px; background-color: #003E79;
 			} 
 			.formRow{
 				input{ 
@@ -301,7 +321,7 @@ a{ color:#006fb6; }
 	}
 }
 .mobileNav{
-	position:fixed; right:-100%; width:100%; height:100%; z-index:10; opacity: 0;
+	position:fixed; right:-100%; width:100%; height:100%; z-index:1001; opacity: 0; top:0;
 	-webkit-transition: all 200ms ease-in;
 	-moz-transition: all 200ms ease-in;
 	-ms-transition: all 200ms ease-in;
