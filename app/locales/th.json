@@ -18,7 +18,7 @@
         "formErrorMsg" : "ใส่ตัวอักษร6 ตัวซ้ำอีกทีจากภาพ"
     },
     "duplicate": {
-        "h2Title" : "Label ID is valid",
+        "h2Title" : "ไอดีฉลากถูกต้อง",
         "labelIsValid" : "ไอดีบนฉลากถูกต้อง หมายความว่าผลิตภัณฑ์ของคุณเป็นของแท้",
         "labelIsValidBold" : "",
         "labelIsValidDetail" : "หากไอดีบนฉลากถูกต้อง หมายความว่าผลิตถัณฑ์ของคุณเป็นของแท้ แต่ถ้ารหัสบางรหัสถูกตรวจสอบถึง 5 ครั้งหรือมากกว่านั้น มีความเป็นไปได้สูงว่ารหัสอาจซ้้ากัน กรุณาติดต่อร้านค้าของคุณเพื่อยืนยันอีกครั้งว่าผลิตภัณฑ์เป็นของแท้",
@@ -31,7 +31,7 @@
         "discoverURL" : "www.philips.com/automotive"
     },
     "valid": {
-        "h2Title" : "Label ID is valid",
+        "h2Title" : "ไอดีฉลากถูกต้อง",
         "labelIsValid" : "ไอดีฉลากถูกต้อง หมายความว่าผลิตภัณฑ์เป็นของแท้",
         "labelIsValidBold" : "",
         "emailTitle": "การติดต่อทางอีเมล์",
@@ -43,7 +43,7 @@
         "discoverURL" : "www.philips.com/automotive"
     },
     "invalid": {
-        "h2Title" : "Label ID is invalid",
+        "h2Title" : "ไอดีบนฉลากถูกต้อง",
         "labelIsInvalid" : "ไอดีบนฉลากถูกต้อง หมายความว่าผลิตภัณฑ์ของคุณเป็นของแท้",
         "labelIsInvalidBold" : "",
         "pleaseContact" : "",
