@@ -15,10 +15,11 @@
         "p_url" : "www.philips.com/authenticity/auto",
         "formEnterDigi" : "라벨 위를 긁어 낸 후 16자리 숫자를 입력 하십시오",
         "formEnterFromImage" : "그림 속의 알파벳 6글자를 입력 하십시오",
-        "formErrorMsg" : "다시 입력 하십시오"
+        "formErrorMsg" : "다시 입력 하십시오",
+        "formSixteenDigiErrorMsg" : "라벨 위의 16자리 숫자를 입력 해야 합니다."
     },
     "duplicate": {
-        "h2Title" : "라벨ID가 유효함은",
+        "h2Title" : "라벨ID가 무효함은",
         "labelIsValid" : "라벨 ID가 확인 되면 되지 않는다면, ",
         "labelIsValidBold" : "여러분의 상품이 진품임을 뜻합니다.",
         "labelIsValidDetail" : "라벨 ID가 확인되면 제품이 필립스 정품임을 뜻 합니다. 그러나, 동일 코드가 5회 이상 점검될 때는, 복제된 코드가 이용되고 있음을 뜻할 가능성이 높습니다. 이런 경우, 상품 진위를 재확인하기 위하여 현지 업체 측에 연락하십시오.",
@@ -31,9 +32,9 @@
         "discoverURL" : "www.philips.com/automotive"
     },
     "valid": {
-        "h2Title" : "라벨ID가 유효함은",
-        "labelIsValid" : "라벨ID가 유효함은 여러분의 상품이 진품임을 뜻합니다.",
-        "labelIsValidBold" : "",
+        "h2Title" : "라벨ID가 무효함은",
+        "labelIsValid" : "라벨ID가 무효함은, 고객의 상품이 모조품일 가능성이 높습니다. ",
+        "labelIsValidBold" : "진품을 구하시려면, 현지 소매업자나 업체 측에 연락하십시오.",
         "emailTitle": "이메일 연락처",
         "authentic" : "여러분의 필립 상품의 적법성에 의심이 가시면, ",
         "pleaseEmail" : "다음 이메일로 연락 주십시오: ",

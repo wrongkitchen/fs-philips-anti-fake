@@ -83,7 +83,6 @@ module.exports = function (grunt) {
 			livereload: {
 				options: {
 					middleware: function(connect) {
-						console.log(connect);
 						return [
 							connect.static('.tmp'),
 							connect().use('bower_components', connect.static('./bower_components')),
@@ -173,7 +172,7 @@ module.exports = function (grunt) {
 					expand: true,
 					cwd: '<%= config.app %>/styles',
 					src: ['*.{scss,sass}'],
-					dest: '.tmp/styles',
+					dest: '<%= config.app %>/styles',
 					ext: '.css'
 				}]
 			}
@@ -354,7 +353,7 @@ module.exports = function (grunt) {
 		multi_lang_site_generator: {
 			default: {
 				options: {
-					vocabs: ['en_hk', 'zh_hk', 'cn', 'jp', 'kr', 'th', 'vn'],
+					vocabs: ['en_au', 'zh_tw', 'cn', 'jp', 'kr', 'th', 'vn'],
 					vocab_directory: '<%= config.app %>/locales/',
 					output_directory: '<%= config.dist %>/'
 				},

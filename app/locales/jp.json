@@ -15,7 +15,8 @@
         "p_url" : "www.philips.com/authenticity/auto",
         "formEnterDigi" : "ラベルをはがし、記載されている16桁の数字を入力してください。",
         "formEnterFromImage" : "セキュリティコード（6桁）を入力してください。",
-        "formErrorMsg" : "再度、セキュリティコード（6桁）を入力してください。"
+        "formErrorMsg" : "再度、セキュリティコード（6桁）を入力してください。",
+        "formSixteenDigiErrorMsg" : "再度、ラベルに記載された１6桁のコードを入力してください。"
     },
     "duplicate": {
         "h2Title" : "ラベルID有効",

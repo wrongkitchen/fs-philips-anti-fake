@@ -14,11 +14,11 @@ block content
 					b <%= index.p_url %>
 			div.lower
 				div.form
-					div.sixteenDigis.formRow
+					div.sixteenDigis.formRow.hasError
 						div.label <%= index.formEnterDigi %>
 						div.textInput
 							input(type="text")
-							div.errorMsg
+							div.errorMsg <%= index.formSixteenDigiErrorMsg %>
 					div.sixChar.formRow.hasError
 						div.label <%= index.formEnterFromImage %>
 						div.textInput

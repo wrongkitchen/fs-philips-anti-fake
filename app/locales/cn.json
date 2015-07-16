@@ -15,7 +15,8 @@
         "p_url" : "www.philips.com/authenticity/auto",
         "formEnterDigi" : "请刮开标签涂层并输入16位数字",
         "formEnterFromImage" : "请输入图中6位验证码",
-        "formErrorMsg" : "请再次输入图中6位验证码"
+        "formErrorMsg" : "请再次输入图中6位验证码",
+        "formSixteenDigiErrorMsg" : "涂层刮开后标签须含有16位数字"
     },
     "duplicate": {
         "h2Title" : "标签ID序号验证有效",

@@ -60,11 +60,11 @@
               </div>
               <div class="lower">
                 <div class="form">
-                  <div class="sixteenDigis formRow">
+                  <div class="sixteenDigis formRow hasError">
                     <div class="label"><%= index.formEnterDigi %></div>
                     <div class="textInput">
                       <input type="text">
-                      <div class="errorMsg"></div>
+                      <div class="errorMsg"><%= index.formSixteenDigiErrorMsg %></div>
                     </div>
                   </div>
                   <div class="sixChar formRow hasError">
@@ -91,9 +91,7 @@
     <script src="bower_components/jquery-selectboxit/src/javascripts/jquery.selectBoxIt.min.js"></script>
     <!-- endbuild-->
     <script>
-      if('<%= general.lang %>' === 'jp'){
-      	$('body').addClass('jp');
-      }
+      $('body').addClass('<%= general.lang %>');
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create','UA-XXXXX-X');ga('send','pageview');
       
     </script>

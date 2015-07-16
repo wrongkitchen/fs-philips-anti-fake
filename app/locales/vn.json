@@ -15,7 +15,8 @@
         "p_url" : "www.philips.com/authenticity/auto",
         "formEnterDigi" : "Vui lòng nhập 16 chữ số in trên nhãn sau khi cà",
         "formEnterFromImage" : "Vui lòng nhập 6 kí tự từ trong hình này",
-        "formErrorMsg" : "Nhập lại 6 kí tự từ trong hình này."
+        "formErrorMsg" : "Nhập lại 6 kí tự từ trong hình này.",
+        "formSixteenDigiErrorMsg" : "16 chữ số trên tem là cần thiết, được  yêu cầu nhập vào"
     },
     "duplicate": {
         "h2Title" : "ID nhãn hiệu hợp lệ",
