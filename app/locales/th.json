@@ -1,5 +1,6 @@
 {
     "general":{
+    	"languageSelector" : "<option value=''>Language</option><option value='en_au'>English</option><option value='ch_tw'>繁體中文</option><option value='cn'>簡體中文</option><option value='jp'>日本語</option><option value='kr'>한국어</option><option value='th' selected>ไทย</option><option value='vn'>Tiếng Việt</option>",
     	"lang" : "th",
         "pageTitle" : "ยินดีต้อนรับสผลิตภัณฑ์ฟิลิปส์ของแท้",
         "headerTitle" : "ยินดีต้อนรับสู่",

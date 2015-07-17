@@ -353,7 +353,7 @@ module.exports = function (grunt) {
 		multi_lang_site_generator: {
 			default: {
 				options: {
-					vocabs: ['en_au', 'zh_tw', 'cn', 'jp', 'kr', 'th', 'vn'],
+					vocabs: ['en_au', 'ch_tw', 'cn', 'jp', 'kr', 'th', 'vn'],
 					vocab_directory: '<%= config.app %>/locales/',
 					output_directory: '<%= config.dist %>/'
 				},

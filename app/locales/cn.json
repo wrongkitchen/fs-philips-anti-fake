@@ -1,5 +1,6 @@
 {
     "general":{
+    	"languageSelector" : "<option value=''>Language</option><option value='en_au' selected>English</option><option value='ch_tw'>繁體中文</option><option value='cn' selected>簡體中文</option><option value='jp' selected>日本語</option><option value='kr'>한국어</option><option value='th'>ไทย</option><option value='vn'>Tiếng Việt</option>",
     	"lang" : "cn",
         "pageTitle" : "欢迎来到飞利浦产品真伪查询网站",
         "headerTitle" : "欢迎来到飞利浦产品",

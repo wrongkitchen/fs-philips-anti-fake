@@ -1,5 +1,6 @@
 {
     "general":{
+    	"languageSelector" : "<option value=''>Language</option><option value='en_au'>English</option><option value='ch_tw'>繁體中文</option><option value='cn'>簡體中文</option><option value='jp'>日本語</option><option value='kr' selected>한국어</option><option value='th'>ไทย</option><option value='vn'>Tiếng Việt</option>",
     	"lang" : "kr",
         "pageTitle" : "필립스 정품 확인 사이트를 방문해주신 것을 환영합니다.",
         "headerTitle" : "필립스 정품 확인 사이트를 ",
