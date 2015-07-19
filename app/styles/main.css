@@ -44,21 +44,29 @@ html, body {
 
 body {
   font-family: centrale_sans, sans-serif; }
+  body.vn {
+    font-family: Tahoma, centrale_sans, sans-serif !important; }
+  body.kr {
+    font-family: Centrale_sans, Malgun Gothic, NanumGothic, AppleGothic, Dotum, Arial !important; }
+  body.zh_hk {
+    font-family: Centrale_sans, Microsoft JhengHei, Heiti TC, PMingLIU !important; }
   body.th {
-    font-family: Tahoma, centrale_sans, sans-serif; }
+    font-family: Tahoma, centrale_sans, sans-serif !important; }
   body.cn {
-    font-family: Centrake, Microsoft YaHei, Heiti SC, SimHei, sans-serif; }
+    font-family: Centrake, Microsoft YaHei, Heiti SC, SimHei, sans-serif !important; }
     body.cn #phi-header-content .title h1 {
       font-family: Centrake, Microsoft YaHei, Heiti SC, SimHei, sans-serif !important; }
   body.mobileNavExpend .mobileNav {
     right: 0;
     opacity: 1; }
-  body.jp .p-n01-header .p-bar-nav.p-position {
-    top: -2px; }
-  body.jp .p-n01-header .p-bar-nav.p-position > li {
-    padding-bottom: 14px; }
-  body.jp .p-n01-header .p-bar-nav > li {
-    font-size: 13px; }
+  body.jp {
+    font-family: Centrale_sans, Meiryo, メイリオ, Hiragino Kaku Gothic Pro, ヒラギノ角ゴ Pro W3, MS Gothic, MS Pゴシック !important; }
+    body.jp .p-n01-header .p-bar-nav.p-position {
+      top: -2px; }
+    body.jp .p-n01-header .p-bar-nav.p-position > li {
+      padding-bottom: 14px; }
+    body.jp .p-n01-header .p-bar-nav > li {
+      font-size: 13px; }
 
 a {
   color: #006fb6; }

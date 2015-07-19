@@ -83,9 +83,14 @@ html, body {
 }
 body{
 	font-family: centrale_sans, sans-serif;
-	&.th{ font-family: Tahoma, centrale_sans, sans-serif; }
+	&.vn{ font-family: Tahoma, centrale_sans, sans-serif !important; }
+
+	&.kr{ font-family: Centrale_sans, Malgun Gothic, NanumGothic, AppleGothic, Dotum, Arial !important; };
+	&.zh_hk{ font-family: Centrale_sans, Microsoft JhengHei, Heiti TC, PMingLIU !important; } 
+
+	&.th{ font-family: Tahoma, centrale_sans, sans-serif  !important; }
 	&.cn{ 
-		font-family: Centrake, Microsoft YaHei, Heiti SC, SimHei, sans-serif; 
+		font-family: Centrake, Microsoft YaHei, Heiti SC, SimHei, sans-serif !important; 
 		#phi-header-content .title h1{ 
 			font-family: Centrake, Microsoft YaHei, Heiti SC, SimHei, sans-serif !important; 
 		}
@@ -94,6 +99,7 @@ body{
 		.mobileNav{ right:0; opacity: 1; }
 	}
 	&.jp{
+		font-family: Centrale_sans,Meiryo,メイリオ,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,MS Gothic,MS Pゴシック !important;
 		.p-n01-header .p-bar-nav.p-position{ top:-2px; }
 		.p-n01-header .p-bar-nav.p-position>li{ padding-bottom:14px; }
 		.p-n01-header .p-bar-nav>li{ font-size:13px; }
