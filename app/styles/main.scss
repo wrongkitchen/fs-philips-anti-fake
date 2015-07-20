@@ -346,6 +346,8 @@ a{ color:#006fb6; }
 		width:10%; height:100%; background-color:rgba(0,0,0,.5); float:left; background-image: url(../images/ico-nav.png); 
 		background-position: center 15px; background-repeat: no-repeat;
 	}
+	.mobileTitle{ margin: 0px 20px; padding: 20px 0; display: block; font-size: 16px; }
+	.p-sub-menu{ display:none; }
 	.bottomLogo{ margin-top:50px; text-align: center; }
 	.navContent{
 		width:90%; height:100%; background:#0d2d69; float:left;
@@ -353,15 +355,17 @@ a{ color:#006fb6; }
 		background: -o-linear-gradient(top left, #091d45 0%, #0b2557 50%, #0d2d69 100%);
 		background: linear-gradient(to bottom right, #091d45 0%, #0b2557 50%, #0d2d69 100%);
 		ul{
-			li { 
-				padding: 12px 0 0 0; border-bottom: 1px solid #003478; position:relative;
-				&:after{ 
-					content:' '; color:#FFF; position:absolute; right:5px; top:50%; width:24px; height:24px; margin-top:-12px; 
-					background-image:url(../images/ico-right-arrow.png); background-repeat: no-repeat; background-position: center center;
-				}
-				a{ 
-					margin-bottom:12px; display: block; margin-left: 20px;
-					color:#FFF;
+			.p-sub-wrapper{
+				li { 
+					padding: 12px 0 0 0; border-bottom: 1px solid #003478; position:relative; text-align: left;
+					&:after{ 
+						content:' '; color:#FFF; position:absolute; right:5px; top:50%; width:24px; height:24px; margin-top:-12px; 
+						background-image:url(../images/ico-right-arrow.png); background-repeat: no-repeat; background-position: center center;
+					}
+					a{ 
+						margin-bottom:12px; display: block; margin-left: 20px;
+						color:#FFF;
+					}
 				}
 			}
 		}

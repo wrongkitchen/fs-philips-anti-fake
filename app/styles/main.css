@@ -383,6 +383,13 @@ a {
     background-image: url(../images/ico-nav.png);
     background-position: center 15px;
     background-repeat: no-repeat; }
+  .mobileNav .mobileTitle {
+    margin: 0px 20px;
+    padding: 20px 0;
+    display: block;
+    font-size: 16px; }
+  .mobileNav .p-sub-menu {
+    display: none; }
   .mobileNav .bottomLogo {
     margin-top: 50px;
     text-align: center; }
@@ -394,11 +401,12 @@ a {
     background: -webkit-linear-gradient(top left, #091d45 0%, #0b2557 50%, #0d2d69 100%);
     background: -o-linear-gradient(top left, #091d45 0%, #0b2557 50%, #0d2d69 100%);
     background: linear-gradient(to bottom right, #091d45 0%, #0b2557 50%, #0d2d69 100%); }
-    .mobileNav .navContent ul li {
+    .mobileNav .navContent ul .p-sub-wrapper li {
       padding: 12px 0 0 0;
       border-bottom: 1px solid #003478;
-      position: relative; }
-      .mobileNav .navContent ul li:after {
+      position: relative;
+      text-align: left; }
+      .mobileNav .navContent ul .p-sub-wrapper li:after {
         content: ' ';
         color: #FFF;
         position: absolute;
@@ -410,7 +418,7 @@ a {
         background-image: url(../images/ico-right-arrow.png);
         background-repeat: no-repeat;
         background-position: center center; }
-      .mobileNav .navContent ul li a {
+      .mobileNav .navContent ul .p-sub-wrapper li a {
         margin-bottom: 12px;
         display: block;
         margin-left: 20px;
