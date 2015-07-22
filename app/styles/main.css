@@ -67,6 +67,10 @@ body {
       padding-bottom: 14px; }
     body.jp .p-n01-header .p-bar-nav > li {
       font-size: 13px; }
+      body.jp .p-n01-header .p-bar-nav > li span a {
+        color: #FFF; }
+    body.jp .p-n01-header .p-bar-nav > li.p-hover .p-sub-menu a, body.jp .p-n01-header .p-bar-nav > li:hover .p-sub-menu a {
+      color: #3c3c3c; }
 
 a {
   color: #006fb6; }
@@ -83,13 +87,13 @@ a {
 .mainContent {
   width: 960px;
   margin: 0 auto; }
-  @media screen and (max-width: 959px) {
+  @media screen and (max-width: 989px) {
     .mainContent {
       width: auto; } }
 
 #nav {
   margin-left: 180px; }
-  @media screen and (max-width: 959px) {
+  @media screen and (max-width: 989px) {
     #nav {
       display: none; } }
 
@@ -106,7 +110,7 @@ a {
   height: 200px;
   background: url(../images/philips-shape-140.png) no-repeat scroll top left;
   top: 11px; }
-  @media screen and (max-width: 959px) {
+  @media screen and (max-width: 989px) {
     #box-philips-logo {
       background: url(../images/philips-shape-mobile.png) no-repeat scroll top left;
       background-size: contain;
@@ -155,7 +159,7 @@ a {
   right: 0;
   top: 70px;
   color: #3c3c3c; }
-  @media screen and (max-width: 959px) {
+  @media screen and (max-width: 989px) {
     .languagePicker {
       right: 60px;
       top: 17px; } }
@@ -164,7 +168,7 @@ a {
   .languagePicker .selectboxit-container .selectboxit {
     border-radius: 2px;
     padding: 0 40px 0 20px; }
-    @media screen and (max-width: 959px) {
+    @media screen and (max-width: 989px) {
       .languagePicker .selectboxit-container .selectboxit {
         padding: 0; } }
   .languagePicker .selectboxit .selectboxit-arrow-container .selectboxit-arrow {
@@ -199,7 +203,7 @@ a {
   top: 20px;
   display: none; }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 989px) {
   .p-bar-wrapper {
     display: none !important; }
   .mobileHide {
@@ -243,7 +247,7 @@ a {
 
 .labelIDReport {
   color: #3c3c3c; }
-  @media screen and (max-width: 959px) {
+  @media screen and (max-width: 989px) {
     .labelIDReport {
       padding: 20px; } }
   .labelIDReport.invalid h2 {
@@ -264,7 +268,7 @@ a {
     margin-bottom: 50px; }
   .labelIDReport .upper, .labelIDReport .lower {
     width: 570px; }
-    @media screen and (max-width: 959px) {
+    @media screen and (max-width: 989px) {
       .labelIDReport .upper, .labelIDReport .lower {
         width: auto; } }
   .labelIDReport .discover {
@@ -273,20 +277,21 @@ a {
     width: 35px;
     height: 35px;
     margin-top: 40px;
-    background-image: url(../images/btn-back.jpg); }
+    background-image: url(../images/btn-back.jpg);
+    display: inline-block; }
 
 .formWrap {
   font-size: 14px;
   color: #3c3c3c; }
   .formWrap .contentRight, .formWrap .contentLeft {
     float: left; }
-    @media screen and (max-width: 959px) {
+    @media screen and (max-width: 989px) {
       .formWrap .contentRight, .formWrap .contentLeft {
         float: none; } }
   .formWrap .contentLeft {
     margin-right: 35px;
     width: 550px; }
-    @media screen and (max-width: 959px) {
+    @media screen and (max-width: 989px) {
       .formWrap .contentLeft {
         width: auto;
         padding: 20px;
@@ -296,7 +301,7 @@ a {
     .formWrap .contentLeft .pull-left.qrcode {
       width: 265px;
       text-align: right; }
-      @media screen and (max-width: 959px) {
+      @media screen and (max-width: 989px) {
         .formWrap .contentLeft .pull-left.qrcode {
           width: 50%; }
           .formWrap .contentLeft .pull-left.qrcode img {
@@ -304,7 +309,7 @@ a {
     .formWrap .contentLeft .form {
       padding-top: 28px; }
       .formWrap .contentLeft .form .submitBtn {
-        width: 87px;
+        width: 105px;
         height: 35px;
         margin-top: 74px;
         color: #FFF;
@@ -349,7 +354,7 @@ a {
           padding-top: 50px; }
         .formWrap .contentLeft .form .formRow .label {
           width: 180px; } }
-      @media screen and (max-width: 959px) {
+      @media screen and (max-width: 989px) {
         .formWrap .contentLeft .form {
           padding-top: 0;
           max-width: 520px; }
@@ -358,7 +363,7 @@ a {
   .formWrap .contentRight {
     width: 375px;
     overflow: hidden; }
-    @media screen and (max-width: 959px) {
+    @media screen and (max-width: 989px) {
       .formWrap .contentRight {
         display: none; } }
 
