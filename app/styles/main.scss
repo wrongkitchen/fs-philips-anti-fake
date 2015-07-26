@@ -103,13 +103,18 @@ body{
 		.p-n01-header .p-bar-nav.p-position{ top:-2px; }
 		.p-n01-header .p-bar-nav.p-position>li{ padding-bottom:14px; }
 		.p-n01-header .p-bar-nav>li{ 
-			font-size:13px; 
+			font-size:1rem; 
 			span a{ color:#FFF; }
 		}
-		.p-n01-header .p-bar-nav>li.p-hover .p-sub-menu a, .p-n01-header .p-bar-nav>li:hover .p-sub-menu a{ color:#3c3c3c; }
+		.p-n01-header .p-bar-nav>li.p-hover .p-sub-menu a, .p-n01-header .p-bar-nav>li:hover .p-sub-menu a{ 
+			color:#3c3c3c; 
+			font-size:1rem;
+		}
 	}
 }
-a{ color:#006fb6; }
+.p-n01-header .p-bar-nav .p-sub-wrapper{ z-index:100; }
+.p-n01-header .p-bar-nav .p-sub-menu{ background: url(../images/0b5948ea.flyout-bg.png); }
+a{ color:#006fb6; font-size:1.3rem; }
 .clearfix{ clear:both; }
 .pull-left{ float:left; } 
 .pull-right{ float:right; } 
@@ -192,6 +197,15 @@ a{ color:#006fb6; }
 	background-image: url(../images/ico-nav.png); background-position: center center; background-repeat: no-repeat;
 	width:24px; height:24px; position:absolute; right:20px; top:20px; display:none;
 }
+.p-footer .p-grid-item.footer-last-child, .p-footer .p-ie8-grid-item{
+    color: #fff;
+    padding-top: 50px!important;
+    text-align: right;
+    width: 42%;
+}
+.p-f02-global-footer .p-main-footer-about ul .p-always-visible, .tbd01-genericnavigation .p-main-footer-about ul .p-always-visible{
+	padding: 0 5px;
+}
 @include respond-to(mix)
 {
 	.p-bar-wrapper{ display:none !important; }
@@ -224,7 +238,7 @@ a{ color:#006fb6; }
 				top: 180px;
 				padding: 0 !important;
 			}
-			&:last-child {
+			&:last-child, &.footer-last-child {
 				position: absolute;
 				top: 270px;
 				width: 100%;
@@ -357,10 +371,18 @@ a{ color:#006fb6; }
 	.p-sub-menu{ display:none; }
 	.bottomLogo{ margin-top:50px; text-align: center; }
 	.navContent{
-		width:90%; height:100%; background:#0d2d69; float:left;
-		background: -webkit-linear-gradient(top left, #091d45 0%, #0b2557 50%, #0d2d69 100%);
-		background: -o-linear-gradient(top left, #091d45 0%, #0b2557 50%, #0d2d69 100%);
-		background: linear-gradient(to bottom right, #091d45 0%, #0b2557 50%, #0d2d69 100%);
+		width:90%; height:100%; background:#0d2d69; float:left; 
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#091d45+0,0b2557+50,0d2d69+100 */
+		background: #091d45; /* Old browsers */
+		/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA5MWQ0NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzBiMjU1NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwZDJkNjkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+		background: -moz-linear-gradient(top,  #091d45 0%, #0b2557 50%, #0d2d69 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#091d45), color-stop(50%,#0b2557), color-stop(100%,#0d2d69)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #091d45 0%,#0b2557 50%,#0d2d69 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #091d45 0%,#0b2557 50%,#0d2d69 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #091d45 0%,#0b2557 50%,#0d2d69 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #091d45 0%,#0b2557 50%,#0d2d69 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#091d45', endColorstr='#0d2d69',GradientType=0 ); /* IE6-8 */
 		ul{
 			.p-sub-wrapper{
 				li { 
@@ -378,3 +400,64 @@ a{ color:#006fb6; }
 		}
 	}
 }
+
+.p-n01-header .p-sidebar{ display:none !important; }
+body.jp #phi-header-content .title h1{font-family:Centrale_sans,Meiryo,メイリオ,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,MS Gothic,MS Pゴシック!important}
+body.jp button, body.jp input, body.jp select, body.jp textarea{font-family:Centrale_sans,Meiryo,メイリオ,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,MS Gothic,MS Pゴシック!important}
+body.jp .p-n01-header{font-family:Centrale_sans,Meiryo,メイリオ,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,MS Gothic,MS Pゴシック!important}
+body.jp .labelIDReport.invalid h2{font-family:Centrale_sans,Meiryo,メイリオ,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,MS Gothic,MS Pゴシック!important}
+body.jp .labelIDReport.valid h2{font-family:Centrale_sans,Meiryo,メイリオ,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,MS Gothic,MS Pゴシック!important}
+body.jp .labelIDReport.duplicate h2{font-family:Centrale_sans,Meiryo,メイリオ,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,MS Gothic,MS Pゴシック!important}
+body.jp .labelIDReport h3{font-family:Centrale_sans,Meiryo,メイリオ,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,MS Gothic,MS Pゴシック!important}
+body.jp .n05-selectcountry a{font-family:Centrale_sans,Meiryo,メイリオ,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,MS Gothic,MS Pゴシック!important}
+body.jp .p-footer .p-grid-item h3{font-family:Centrale_sans,Meiryo,メイリオ,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,MS Gothic,MS Pゴシック!important}
+body.jp .i18-internationalizationitem{font-family:Centrale_sans,Meiryo,メイリオ,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,MS Gothic,MS Pゴシック!important}
+body.jp .tbd01-genericnavigation a{font-family:Centrale_sans,Meiryo,メイリオ,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,MS Gothic,MS Pゴシック!important}
+
+body.kr #phi-header-content .title h1{font-family:Centrale_sans,Malgun Gothic,NanumGothic,AppleGothic,Dotum,Arial!important}
+body.kr button, body.kr input, body.kr select, body.kr textarea{font-family:Centrale_sans,Malgun Gothic,NanumGothic,AppleGothic,Dotum,Arial!important}
+body.kr .p-n01-header{font-family:Centrale_sans,Malgun Gothic,NanumGothic,AppleGothic,Dotum,Arial!important}
+body.kr .labelIDReport.invalid h2{font-family:Centrale_sans,Malgun Gothic,NanumGothic,AppleGothic,Dotum,Arial!important}
+body.kr .labelIDReport.valid h2{font-family:Centrale_sans,Malgun Gothic,NanumGothic,AppleGothic,Dotum,Arial!important}
+body.kr .labelIDReport.duplicate h2{font-family:Centrale_sans,Malgun Gothic,NanumGothic,AppleGothic,Dotum,Arial!important}
+body.kr .labelIDReport h3{font-family:Centrale_sans,Malgun Gothic,NanumGothic,AppleGothic,Dotum,Arial!important}
+body.kr .n05-selectcountry a{font-family:Centrale_sans,Malgun Gothic,NanumGothic,AppleGothic,Dotum,Arial!important}
+body.kr .p-footer .p-grid-item h3{font-family:Centrale_sans,Malgun Gothic,NanumGothic,AppleGothic,Dotum,Arial!important}
+body.kr .i18-internationalizationitem{font-family:Centrale_sans,Malgun Gothic,NanumGothic,AppleGothic,Dotum,Arial!important}
+body.kr .tbd01-genericnavigation a{font-family:Centrale_sans,Malgun Gothic,NanumGothic,AppleGothic,Dotum,Arial!important}
+
+body.zh_hk #phi-header-content .title h1{font-family:Centrale_sans,Microsoft JhengHei,Heiti TC,PMingLIU!important}
+body.zh_hk button, body.zh_hk input, body.zh_hk select, body.zh_hk textarea{font-family:Centrale_sans,Microsoft JhengHei,Heiti TC,PMingLIU!important}
+body.zh_hk .p-n01-header{font-family:Centrale_sans,Microsoft JhengHei,Heiti TC,PMingLIU!important}
+body.zh_hk .labelIDReport.invalid h2{font-family:Centrale_sans,Microsoft JhengHei,Heiti TC,PMingLIU!important}
+body.zh_hk .labelIDReport.valid h2{font-family:Centrale_sans,Microsoft JhengHei,Heiti TC,PMingLIU!important}
+body.zh_hk .labelIDReport.duplicate h2{font-family:Centrale_sans,Microsoft JhengHei,Heiti TC,PMingLIU!important}
+body.zh_hk .labelIDReport h3{font-family:Centrale_sans,Microsoft JhengHei,Heiti TC,PMingLIU!important}
+body.zh_hk .n05-selectcountry a{font-family:Centrale_sans,Microsoft JhengHei,Heiti TC,PMingLIU!important}
+body.zh_hk .p-footer .p-grid-item h3{font-family:Centrale_sans,Microsoft JhengHei,Heiti TC,PMingLIU!important}
+body.zh_hk .i18-internationalizationitem{font-family:Centrale_sans,Microsoft JhengHei,Heiti TC,PMingLIU!important}
+body.zh_hk .tbd01-genericnavigation a{font-family:Centrale_sans,Microsoft JhengHei,Heiti TC,PMingLIU!important}
+
+body.vn #phi-header-content .title h1{font-family:Tahoma,centrale_sans,sans-serif!important}
+body.vn button, body.vn input, body.vn select, body.vn textarea{font-family:Tahoma,centrale_sans,sans-serif!important}
+body.vn .p-n01-header{font-family:Tahoma,centrale_sans,sans-serif!important}
+body.vn .labelIDReport.invalid h2{font-family:Tahoma,centrale_sans,sans-serif!important}
+body.vn .labelIDReport.valid h2{font-family:Tahoma,centrale_sans,sans-serif!important}
+body.vn .labelIDReport.duplicate h2{font-family:Tahoma,centrale_sans,sans-serif!important}
+body.vn .labelIDReport h3{font-family:Tahoma,centrale_sans,sans-serif!important}
+body.vn .n05-selectcountry a{font-family:Tahoma,centrale_sans,sans-serif!important}
+body.vn .p-footer .p-grid-item h3{font-family:Tahoma,centrale_sans,sans-serif!important}
+body.vn .i18-internationalizationitem{font-family:Tahoma,centrale_sans,sans-serif!important}
+body.vn .tbd01-genericnavigation a{font-family:Tahoma,centrale_sans,sans-serif!important}
+
+body.th #phi-header-content .title h1{font-family:Tahoma,centrale_sans,sans-serif!important}
+body.th button, body.th input, body.th select, body.th textarea{font-family:Tahoma,centrale_sans,sans-serif!important}
+body.th .p-n01-header{font-family:Tahoma,centrale_sans,sans-serif!important}
+body.th .labelIDReport.invalid h2{font-family:Tahoma,centrale_sans,sans-serif!important}
+body.th .labelIDReport.valid h2{font-family:Tahoma,centrale_sans,sans-serif!important}
+body.th .labelIDReport.duplicate h2{font-family:Tahoma,centrale_sans,sans-serif!important}
+body.th .labelIDReport h3{font-family:Tahoma,centrale_sans,sans-serif!important}
+body.th .n05-selectcountry a{font-family:Tahoma,centrale_sans,sans-serif!important}
+body.th .p-footer .p-grid-item h3{font-family:Tahoma,centrale_sans,sans-serif!important}
+body.th .i18-internationalizationitem{font-family:Tahoma,centrale_sans,sans-serif!important}
+body.th .tbd01-genericnavigation a{font-family:Tahoma,centrale_sans,sans-serif!important}
