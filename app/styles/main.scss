@@ -113,7 +113,10 @@ body{
 	}
 }
 .p-n01-header .p-bar-nav .p-sub-wrapper{ z-index:100; }
-.p-n01-header .p-bar-nav .p-sub-menu{ background: url(../images/0b5948ea.flyout-bg.png); }
+.p-n01-header .p-bar-nav .p-sub-menu{ 
+	background-image: url(../images/flyout-bg-1x1.png); 
+	background-repeat: repeat; background-position: 0 0;
+}
 a{ color:#006fb6; font-size:1.3rem; }
 .clearfix{ clear:both; }
 .pull-left{ float:left; } 
@@ -190,6 +193,7 @@ a{ color:#006fb6; font-size:1.3rem; }
 	background-image: url(../images/key_visual.jpg); 
 	background-repeat: no-repeat; background-position:center center;
 	background-size: cover;
+	background-color: #000;
 	position: relative;
 	z-index: 10; top: -54px;
 }
